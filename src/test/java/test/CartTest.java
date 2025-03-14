@@ -16,7 +16,7 @@ public class CartTest extends BaseTest {
     }
 
     @Test
-    public void addToCartAndVerify() {
+    public void addToCartAndVerify() throws InterruptedException {
         CartPage cartPage = new CartPage(driver);
         cartPage.navigateToProducts();
         cartPage.addToCart();

@@ -57,25 +57,29 @@ public class HomePage extends BasePage {
     private WebElement loginButton;
 
     public HomePage(WebDriver driver) {
-        super(driver);
+        this.driver =driver;
+        InitPage();
     }
 
     public void navigateToSignup() {
         signupLoginLink.click();
     }
+    public void navigateToLogIn() {
+        signupLoginLink.click();
+    }
 
     public void signUp() {
-        nameField.sendKeys("Projera Test User");
-        emailField.sendKeys("testuser1@projera.com");
+        nameField.sendKeys("Marvin Test User");
+        emailField.sendKeys("testuser42@hitchhikers.com");
         signupButton.click();
     }
 
     public void completeSignup() {
         genderRadio.click();
         passwordField.sendKeys("test1234");
-        firstName.sendKeys("Projera Test");
-        lastName.sendKeys("User");
-        adressField.sendKeys("Projera");
+        firstName.sendKeys("Marvin");
+        lastName.sendKeys("Test User");
+        adressField.sendKeys("Heart of Gold");
         stateField.sendKeys("Türkiye");
         cityField.sendKeys("İzmir");
         zipcodeField.sendKeys("35500");
@@ -93,5 +97,9 @@ public class HomePage extends BasePage {
         loginEmailField.sendKeys(email);
         loginPasswordField.sendKeys(password);
         loginButton.click();
+    }
+
+    public boolean isLoggedIn(){
+        return logoutLink.isDisplayed();
     }
 }

@@ -24,9 +24,10 @@ public class SignUpTest extends BaseTest {
         homePage.completeSignup();
         homePage.logout();
         homePage.navigateToSignup();
-        homePage.login("testuser1@projera.com", "test1234");
+        homePage.login("testuser42@hitchhikers.com", "test1234");
+        Assert.assertTrue(homePage.isLoggedIn(), "Login failed!");
         homePage.logout();
-        Assert.assertTrue(driver.findElement(By.linkText("Logout")).isDisplayed(), "Login failed!");
+
     }
 
     @AfterTest
