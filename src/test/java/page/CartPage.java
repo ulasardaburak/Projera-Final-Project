@@ -24,7 +24,6 @@ public class CartPage extends BasePage {
 
 
     public CartPage(WebDriver driver) throws InterruptedException {
-        Thread.sleep(5000);
         this.driver =driver;
         InitPage();
     }

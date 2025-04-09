@@ -8,7 +8,7 @@ import org.testng.annotations.AfterTest;
 import page.CartPage;
 
 public class CartTest extends BaseTest {
-    String testName = "CartTest";
+    String testName = "Cart Test";
 
     @BeforeTest
     public void testInitMessage() {

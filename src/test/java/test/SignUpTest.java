@@ -9,7 +9,7 @@ import org.testng.annotations.AfterTest;
 import page.HomePage;
 
 public class SignUpTest extends BaseTest {
-    String testName = "SignUpTest";
+    String testName = "Sign Up Test";
 
     @BeforeTest
     public void testInitMessage() {

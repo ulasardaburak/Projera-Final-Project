@@ -100,6 +100,7 @@ public class HomePage extends BasePage {
     }
 
     public boolean isLoggedIn(){
+
         return logoutLink.isDisplayed();
     }
 }

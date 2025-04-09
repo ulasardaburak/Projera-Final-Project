@@ -28,7 +28,6 @@ public class PaymentPage extends BasePage {
     private WebElement orderConfirm;
 
     public PaymentPage(WebDriver driver) throws InterruptedException {
-        Thread.sleep(5000);
         this.driver =driver;
         InitPage();
     }
@@ -45,6 +44,7 @@ public class PaymentPage extends BasePage {
 
     }
     public boolean isConfirmed(){
+
         return orderConfirm.isDisplayed();
     }
 }

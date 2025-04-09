@@ -10,7 +10,7 @@ import page.HomePage;
 import page.PaymentPage;
 
 public class PaymentTest extends BaseTest {
-    String testName = "PaymentTest";
+    String testName = "Payment Test";
 
     @BeforeTest
     public void testInitMessage() {
